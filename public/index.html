@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+<body>
+
+  <header>
+
+    <div class="nav">
+        <div class="logo">
+            
+        </div>
+
+        <div class="harmburger">
+        <div id="line1" ></div>
+        <div  id="line2"></div>
+        <div  id="line3"></div>
+        </div>
+
+        <ul class="nav-link">
+            
+            <li><a href="">HOME</a></li>
+            <li><a href="">WEATHER REPORT</a></li>
+            <li><a href="">MAP</a></li>
+            <li><a href="">CONTACT US</a></li>
+        </ul>
+      
+    </div>
+
+    <div class="search">
+        <input  placeholder="weather in your city" type="text" name="text-input" id="text"/>
+        <i class="submit"> 
+          <img src="./imgs/icon/icons8-google-web-search-24.png" alt="">
+        </i>
+        <div class="date">
+          <i id="day">06 </i> /
+        <i id="month">09 </i>/
+        <i id="year">2020 </i>
+      </div>
+    </div>
+     
+   <div id="container">
+    <div class="current-location">
+     <section class="temperature">
+        <div class="temp-container">
+           <img src="" alt="" id="img-currentlocation">
+           <i id="description">SUNNY</i><br/>
+         <i><span id="temp">12</span>&#8451 </i>
+          
+        </div> 
+
+     </section>
+     
+     
+     <section class="detail">
+         <h2 id="city">CITY</h2>
+         
+        
+     </section>
+     <section class="other-description">
+       <div>
+        <span> <i id="cloud">67</i><br/> clouds</span> 
+       </div>
+       <div>
+        <span> <i id="pressure">690</i> hPa<br/>pressure</span>
+       </div>
+       <div>
+        <span><i id="humidity">600</i>&#x25 <br/>humidity</span>
+       </div>
+     
+     </section>
+
+
+
+     
+
+    </div>
+
+
+    
+   </div>
+
+
+   <div class="data"> 
+
+    <div class="cross-toggle">
+      <div class="line-toggle" id="line11"></div>
+      <div class="line-toggle" id="line21"></div>
+    
+  
+  </div>
+
+    <div class="result" id="data-description">
+      <div>
+              <img src='' id="wether-icon">
+              <P> TEMPERATURE : <i id="d-temp">990</i>&#8451 </P>
+       
+              
+      </div>
+      <div>
+      <span> DESCRIPTION : <i id="d-description">SUNNY</i></span>
+      </div>
+      <div>
+       <span>CLOUDS : <i id="d-cloud">67</i></span> 
+      </div>
+      <div>
+       <span>PRESSURE : <i id="d-pressure">690</i></span>
+      </div>
+      <div>
+       <span>HUMIDITY : <i id="d-humidity">600</i></span>
+      </div> 
+   </div>
+
+     
+    <div class="result" id="data-temp">
+      <h2 id="city">CITY, <i id="d-country"> country</i></h2>
+     
+    </div>
+
+
+    
+
+
+    
+   </div>
+
+   
+  </header>
+
+
+  
+
+<script type="module" src="./script/module/app.js" ></script> 
+ 
+</body>
+</html>

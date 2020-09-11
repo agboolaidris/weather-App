@@ -1,0 +1,446 @@
+*,::after,::before,html{
+    padding: 0pc;
+    margin: 0pc;
+    box-sizing: border-box;
+}
+ @media only screen and (max-width:700px){
+     *{
+         font-size: 15px;
+     }
+ }
+
+body,html{
+    padding: 0pc;
+    margin: 0pc;
+    background: cornflowerblue;
+    overflow: hidden;
+}
+
+
+header{
+    background-image: url(../imgs/md.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+@media only screen and (max-width:728px){
+    header{
+        background-image: url(../imgs/sm-perfect.jpg)
+        
+    }
+}
+
+.nav{
+    display: flex;
+    flex: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    background: white;
+    min-height: 50px;
+    
+}
+
+.nav-link{
+    margin-top: 10px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    color: cornsilk;
+     margin-top: 0;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav ul li{
+    width: max-content;
+    height: max-content;
+    padding: 5px;
+}
+
+.nav ul a{
+    text-decoration: none;
+}
+
+.nav ul li:hover{
+     border:  1px solid red;
+     border-radius: 15px;
+    }
+
+    
+
+.logo{
+    margin-top: 10px;
+
+    width: 50px;
+    height: 50px;
+    background-image: url(../imgs/icon/icons8-minecraft-logo-50.png);
+}
+
+.harmburger{
+    border: 1px solid cornflowerblue;
+    padding: 2px;
+    height: max-content;
+     margin-top: 15px;
+     display: none;
+     cursor: pointer;
+}
+
+.harmburger div{
+     margin: 3px;
+    width: 20px;
+    height: 2px;
+    background: black;
+    
+}
+
+.search{
+    margin: 20px auto;
+    text-align: center;
+    width: 80%;
+    display: flex;
+    position: relative;
+    
+
+}
+ .date{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 30px;
+    color: red;
+ }
+  
+
+@media only screen and (max-width:1359px){
+    .date{
+        top: 60px;
+        left: 50%;
+        transform: translate(-50%,0px);
+        width: 100vw;
+ 
+        
+        
+    }
+
+}
+
+
+.submit{
+     background:cornflowerblue;
+     height: 50px;
+     border-top-right-radius: 10px;
+     border-bottom-right-radius: 10px;
+     padding: 10px;
+
+
+}
+
+#text{
+     
+    height: 50px;
+    min-width:80%;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+   
+    }
+
+ 
+ 
+
+
+@media only screen and (max-width:914px){
+
+      .nav{
+          position: relative;
+      }
+
+      .nav-link{
+        
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 50%;
+        background:rgb(63, 138, 223);
+        z-index: 2;
+        transform: translate(100%,-100%);
+
+        
+    }
+     
+     .nav ul li a{
+        color: white;
+    }
+
+    .nav ul li:hover{
+           font-size: 20px;
+           border: none;
+          width: 100%;
+          text-align: center;
+          
+
+      }
+    
+
+    .harmburger{
+        margin-top: 0px;
+         z-index: 3;
+         display: block;
+         position: absolute;
+         right: 24%;
+         top: 50%;
+         transform: translate(-24%,-50%);
+
+    }
+
+
+    .logo{
+      margin-top: 0px;
+      position: absolute; 
+      top: 50%;
+      left: 20%;
+      transform: translate(-20%,-50%);
+      
+
+    }
+  
+
+
+
+   
+
+}
+
+.nav-link.display-nav{
+
+    transform: translate(0,0);
+
+}
+
+
+.harmburger.new-harmburger{
+    color: white;
+    border: none;
+    
+}
+
+.new-harmburger #line1{
+    transform: rotate(-45deg) translate(2px,6px);
+    background: white;
+}
+.new-harmburger #line2{
+    display: none;
+}
+
+.new-harmburger #line3{
+    transform: rotate(45deg) translate(3px,-6px);
+    background: white;
+
+}
+  
+        /* container session */
+
+
+#container{
+   
+    width: 100%;
+    height: 100vh;
+}
+
+
+.temperature{
+    position: absolute;
+    right: 20%;
+    top: 50vh;
+    text-align: center;
+    color:white;
+    font-size: 30px;
+}
+
+@media only screen and (max-width:914px){
+
+    .temperature{
+        top: 45%;
+        left: 50%;
+        font-size: 25px;
+        transform: translate(-50%,55%);
+
+    }
+}
+.detail{
+    position: absolute;
+    right: 50%;
+    color: white;
+    font-size: 45px;
+    top: 40%;
+}
+
+@media only screen and (max-width:914px){
+
+    .detail{
+        left: 50%;
+        right: 0px;
+
+        font-size: 20px;
+        transform: translate(-50%,-35%);
+
+    }
+}
+
+
+@media only screen and (max-width:520px){
+
+    .temperature{
+        
+        top: 50%;
+        font-size: 15px;
+    }
+    .detail{
+        top: 50%;
+        font-size: 15px;
+    }
+    
+}
+
+.other-description{
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    right: 20px;
+    top: 30vh;
+    min-width: 150px;
+}
+
+.other-description div{
+    display: inline-block;
+    border-left: 5px solid white;
+    margin-left: 10px;
+
+}
+
+@media only screen and (max-width:914px){
+
+    .other-description{
+        margin: 0px auto;
+        font-size: 20px;
+        top: 200px;
+        
+        
+        
+        
+    }
+
+
+}
+
+
+
+.data{
+    width: 100vw;
+    height: 50vh;
+    background: cornflowerblue;
+    position: absolute;
+    top: 50%;
+    display: none;
+    flex-direction:row-reverse ;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 5; 
+    
+    
+}
+
+.data.data-show{
+    display: flex;
+    transition:all 3s ease-out;
+    
+    
+    
+}
+
+.line-toggle{
+    width: 50px;
+    height: 3px;
+}
+
+.cross-toggle #line11{
+    transform: rotate(-45deg) translate(2px,6px);
+    background:red;
+}
+
+
+.cross-toggle #line21{
+    transform: rotate(45deg) translate(3px,-6px);
+    background:red;
+
+}
+
+
+
+.result{
+    width: 30vw;
+    height:90% ;
+    background: cornflowerblue;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+}
+
+
+
+
+
+@media only screen and (max-width:914px){
+
+
+
+    
+    .data{
+        
+        flex-direction: column;
+        height: 100vh;
+        top: 0px;
+
+    }
+    .result{
+
+        background: none;
+        border-bottom: 2px solid cornflowerblue;
+        width: 100vw;
+        text-align: left;
+        font-size: 25px;
+        color: white;
+        padding: 20px;
+
+    }
+    .result:nth-child(3){
+        border-top: 2px solid white;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .cross-toggle{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        
+    }
+    .line-toggle{
+        width: 40px;
+        height: 3px;
+    }
+
+
+
+
+}
+
