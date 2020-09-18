@@ -5,7 +5,6 @@ export function currentTime(){
 
 
     const time =new Date()
-    console.log(time)
     let day = time.getDate();
     let month = time.getMonth();
     let year = time.getFullYear();

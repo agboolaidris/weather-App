@@ -8,22 +8,27 @@
 
 </head>
 <body>
+  <!DOCTYPE html>
+  <html lang="en">
+  
+  <body>
+    
+  </body>
+  </html>
 
-  <header>
-
+  <div class="wrapper">
+       <!--------------- NAV SESSION--------------->
     <div class="nav">
         <div class="logo">
-            
         </div>
-
+        <!--harmburger for toggle the nav-link in the mobile size-->
         <div class="harmburger">
-        <div id="line1" ></div>
-        <div  id="line2"></div>
-        <div  id="line3"></div>
+           <div id="line1" ></div>
+           <div  id="line2"></div>
+           <div  id="line3"></div>
         </div>
-
+           <!--nav link-->
         <ul class="nav-link">
-            
             <li><a href="">HOME</a></li>
             <li><a href="">WEATHER REPORT</a></li>
             <li><a href="">MAP</a></li>
@@ -32,19 +37,31 @@
       
     </div>
 
-    <div class="search">
+
+     <!-------------------- SEARCH AND DATE SESSION---------------------------->
+    <div class="searc">
+       
+      <!--search-->
+      <div class="search">
         <input  placeholder="weather in your city" type="text" name="text-input" id="text"/>
-        <i class="submit"> 
+        <button class="submit"> 
           <img src="./imgs/icon/icons8-google-web-search-24.png" alt="">
-        </i>
+        </button>
+        
+      </div>
+          <!---date-->
         <div class="date">
           <i id="day">06 </i> /
         <i id="month">09 </i>/
         <i id="year">2020 </i>
       </div>
     </div>
-     
-   <div id="container">
+        
+
+    <!-----------------------CURRENT LOCATION WEATHER DETAILS DISPLAY SESSION---------------------->
+   
+
+
     <div class="current-location">
      <section class="temperature">
         <div class="temp-container">
@@ -57,12 +74,11 @@
      </section>
      
      
-     <section class="detail">
+      <section class="detail">
          <h2 id="city">CITY</h2>
-         
-        
-     </section>
-     <section class="other-description">
+      </section>
+
+       <section class="other-description">
        <div>
         <span> <i id="cloud">67</i><br/> clouds</span> 
        </div>
@@ -73,7 +89,7 @@
         <span><i id="humidity">600</i>&#x25 <br/>humidity</span>
        </div>
      
-     </section>
+       </section>
 
 
 
@@ -83,10 +99,10 @@
 
 
     
-   </div>
+  
+           <!----------SEARCH LOCATION WEATHER DETAIL DISPLAY SESSION-------->
 
-
-   <div class="data"> 
+     <div class="data"> 
 
     <div class="cross-toggle">
       <div class="line-toggle" id="line11"></div>
@@ -130,12 +146,12 @@
    </div>
 
    
-  </header>
+  </div>
 
 
   
 
-<script type="module" src="./script/module/app.js" ></script> 
+<script type="module" src="./script/app.js" ></script> 
  
 </body>
 </html>

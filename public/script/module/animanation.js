@@ -1,6 +1,5 @@
 
  export function navToggle(){
-console.log('noooooo')
 let burger = document.querySelector('.harmburger')
 let nav = document.querySelector('.nav-link')
 const data = document.querySelector('.data')
@@ -15,7 +14,7 @@ burger.addEventListener('click',()=>{
 })
 
 search.addEventListener('click',()=>{
-    data.classList.toggle('data-show')
+  //  data.classList.add('data-show')
 
    
 
